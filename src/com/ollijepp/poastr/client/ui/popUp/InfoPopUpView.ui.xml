@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<g:DialogBox addStyleNames="popUp_DialogBox" ui:field="popUp_DialogBox">
+			<g:VerticalPanel styleName="popUp_Panel" addStyleNames="DefaultColor" ui:field="popUp_Panel">
+				<g:HTML addStyleNames="popUp_InfoLabel" ui:field="popUp_infoHTML"/>
+				<g:Button styleName="popUp_closeButton" text="Close" ui:field="popUp_closeButton" />	
+			</g:VerticalPanel>
+		</g:DialogBox>
+	</g:HTMLPanel>
+</ui:UiBinder> 

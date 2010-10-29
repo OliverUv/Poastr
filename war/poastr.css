@@ -1,0 +1,133 @@
+body
+{
+    background-color: #FF7F00;
+}
+a:link {color:#000000;}      /* unvisited link */
+a:visited {color:#333333;}  /* visited link */
+a:hover {color:#111111;}  /* mouse over link */
+a:active {color:#222222;}  /* selected link */
+#bottomsection
+{
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 70%;
+    background-color: DFDFDF;
+    
+    background-image:url('images/stripes.png');
+    
+    background-repeat: repeat-x;
+    background-position: top;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#topsection
+{
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 100px;
+    padding-top: 20px;
+
+}
+#titlearea
+{
+	position: relative;
+	height: 100%;
+	float: left;
+	margin-left: auto;
+	margin-right: 20px;
+	background-color: F0F0F0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#title
+{
+	margin: auto;
+	height: auto;
+	padding-left: 75px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    font-size: 4.2em;
+}
+#loginlogoutsection
+{
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: F0F0F0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#topdott
+{
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    height: 21px;
+    width: 21px;
+    
+    background-image:url('images/orangedot.png');
+    background-repeat:no-repeat;
+    
+}
+#bottomdott
+{
+    position: absolute;
+    left: 25px;
+    bottom: 15px;
+    height: 21px;
+    width: 21px;
+    
+    background-image:url('images/orangedot.png');
+    background-repeat:no-repeat;
+    
+}
+#signature
+{
+    position: relative;
+    bottom: 5px;
+    height: 2em;
+    width: 100%;
+    text-align: center;
+    font-size: 0.875em;
+}
+#signatureright
+{
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    width: 50%;
+}
+#signatureleft
+{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width: 50%;
+}
+.separator
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FF7F00;
+    width: 90%;
+    height: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+p
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}

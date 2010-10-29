@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Poastr.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  <!-- GUICE handled servlets, used by gwt-dispatch for RPCs -->
+  
+  <filter>
+    <filter-name>guiceFilter</filter-name>
+    <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>guiceFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <listener>
+    <listener-class>com.ollijepp.poastr.server.infrastructure.PoastrGuiceServletConfig</listener-class>
+  </listener>
+  
+  <!-- Servlets for OpenID, require specific url so can't be gwt-dispatch generated -->
+  
+  	<servlet>
+		<servlet-name>popup-verify-servlet</servlet-name>
+		<servlet-class>com.ollijepp.poastr.server.authentication.PopupVerifyServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>popup-verify-servlet</servlet-name>
+		<url-pattern>/popup_verify/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>home-servlet</servlet-name>
+		<servlet-class>com.ollijepp.poastr.server.authentication.HomeServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>home-servlet</servlet-name>
+		<url-pattern>/home/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>logout-servlet</servlet-name>
+		<servlet-class>com.ollijepp.poastr.server.authentication.LogoutServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>logout-servlet</servlet-name>
+		<url-pattern>/logout/</url-pattern>
+	</servlet-mapping>
+  
+  <!-- / OpenID work -->
+  
+ 
+ <!-- OAuth & Poasting servlets, needed for callback -->  
+  <servlet>
+    <servlet-name>twitterPoastServlet</servlet-name>
+    <servlet-class>com.ollijepp.poastr.server.oauth.TwitterPoastServlet</servlet-class>
+    <!-- <load-on-startup>1</load-on-startup> -->
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>twitterPoastServlet</servlet-name>
+    <url-pattern>/poastr/twitterpoast</url-pattern>
+    <url-pattern>/poastr/services/twitterpoast/</url-pattern>
+  </servlet-mapping>
+ <!--   / OAuth & Poasting servlets -->
+
+  
+  <!-- Logging -->
+  	<servlet>
+  		<servlet-name>remoteLoggerServiceImpl</servlet-name>
+  		<servlet-class>com.allen_sauer.gwt.log.server.RemoteLoggerServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>remoteLoggerServiceImpl</servlet-name>
+  		<url-pattern>/poastr/gwt-log</url-pattern>
+	</servlet-mapping>
+  <!-- / Logging -->
+</web-app>

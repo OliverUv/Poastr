@@ -1,0 +1,166 @@
+/************************ LogIn widgets ********************/
+.logIn_Panel
+{
+	/* margin-top: 5%;
+	margin-left: auto;
+	margin-right: 10%;
+	background-color: #BFBFBF;
+	position: relative;
+	width: 40%;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px; */
+    height: 250px;
+}
+.logIn_Label
+{
+	position: relative;
+	width: 50%;
+	margin-top: 10px;
+	margin-right: 40%;
+	margin-left: auto;
+}
+.logIn_Button
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/************************ CreatePost widgets *********************/
+
+.createPost_Panel
+{
+	width: 40%;
+	margin-top: 10px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.createPost_TextArea
+{
+	width: 100%;
+	height: 45px;
+}
+.createPost_wordCountLabel
+{
+	margin-top: 5px;
+	margin-left: 100%;
+}
+createPost_userInfoLabel
+{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 95%;
+}
+.createPost_logo
+{
+	margin: 1px;
+	width: 20px;
+	height: 20px;
+}
+.createPost_accountPanel
+{
+	margin: 5px;
+}
+.createPost_CheckBox
+{
+	margin: 5px;
+	width: 10px;
+	height: 10px;
+}
+.createPost_accountInfoLabel
+{
+	margin: 1px;
+}
+.createPost_cross
+{
+	margin-right: 15px;
+	margin-left: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 20px;
+	height: 20px; 
+}
+
+/***************************** PopUp widgets **********************/
+
+.popUp_DialogBox
+{
+	position: relative;
+}
+.popUp_Panel
+{
+	width: auto;
+	height: auto;
+	border: 5px solid; 
+	border-color: #FF7F30;
+	/* rgba(red, green, blue, alpha) */
+	/*background-color: rgba(235, 235, 235, 0.9);*/
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.popUp_infoLabel
+{
+	margin: 5px;
+	color: #FF7F00;
+}
+.popUp_closeButton
+{
+	width: 60px;
+	height: 30px;
+	position: relative;
+	margin-bottom: 10px;
+	margin-right: 10%;
+}
+.addPopUp_socialServiceLogosPanel
+{
+	position: realtive;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+.addPopUp_Label
+{
+	height: 10px;
+	color: #FF7F00;
+	postition: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10px;
+}
+.addPopUp_TextBox
+{
+	height: 20px;
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10px;
+}
+.addPopUp_logo
+{
+	margin-right: 15px;
+	width: 50px;
+	height: 50px;
+}
+.DefaultColor
+{
+	/* rgba(red, green, blue, alpha) */
+	background-color: rgba(235, 235, 235, 0.9);
+}
+.Twitter
+{
+	background-color: rgba(98, 157, 202, 0.9);
+}
+.Facebook
+{
+	background-color: rgba(18, 6, 121, 0.9);
+}
+
+/******************************* Question mark ********************/
+
+.questionMark
+{
+	margin: 5px;
+	width: 20px;
+	height: 20px;
+}

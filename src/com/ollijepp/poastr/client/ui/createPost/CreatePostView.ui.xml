@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<g:VerticalPanel addStyleNames="createPost_Panel" ui:field="createPost_Panel">
+			<g:Label addStyleNames="createPost_userInfoLabel" ui:field="createPost_userInfo"/>
+			<g:TextArea addStyleNames="createPost_TextArea" ui:field="createPost_postText"/>
+			<g:Label addStyleNames="createPost_wordCountLabel" text="0" ui:field="createPost_wordCount"/>
+			<g:Button styleName="createPost_poast" text="Poast" ui:field="createPost_poast"/>
+			<g:VerticalPanel addStyleNames="createPost_accountsPanel" ui:field="createPost_accountsPanel"/>
+			<g:Button styleName="createPost_addAccountButton" text="Add Account" ui:field="createPost_addAccountButton"/>
+		</g:VerticalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 
